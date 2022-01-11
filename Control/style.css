@@ -1,0 +1,89 @@
+/*body styling starts here*/
+body {
+  /* background-color: red; */
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100vh;
+}
+/*body styling ends here*/
+
+/*Container styling starts here*/
+.container {
+  width: 80%;
+  height: auto;
+  /* background-color: green; */
+  border: 0.5px solid #eeeeee;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.containerTitle h1 {
+  color: #340044;
+  /* text-align: center; */
+}
+/*Container styling ends here*/
+
+form {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+input {
+  width: 48%;
+  padding-left: 10px;
+  height: 40px;
+  border: 0.5px solid #eeeeee;
+  min-width: 200px;
+  margin: 2px;
+}
+
+.hr1 {
+    border-bottom: 1px solid red;
+}
+
+button{
+    width: 100px;
+    height: 40px;
+    border: .5px solid #eeeeee;
+    background-color: #340044;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+
+.gallery {
+    width: 80%;
+    height: auto;/* 
+    background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#id, #imageLink, #description {
+    width: 30%;
+    height: 5     0px;
+    border: .5px solid #eeeeee;
+    margin: 10px;
+    min-width: 300px;
+}
+
+.buttonsSection {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

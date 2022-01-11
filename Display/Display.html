@@ -1,0 +1,70 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+</head>
+<body>
+    <h1 id="userName">Hi</h1>
+    <h1 id="discription">Hi</h1>
+
+    <script src="Display.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="containerTitle">
+            <h1>User Profile</h1>
+        </div>
+        <div class="mainSection">
+            <div class="imageSection">
+                <img id="userImage" class="userImage"
+                    src="https://wac-cdn.atlassian.com/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg?cdnVersion=154"
+                    alt="">
+            </div>
+            <div class="text">
+                <span id="userName" style="color: rgb(27, 27, 27);font-size: 36px;" id="userName">Alaa</span>
+                <span id="userTitle" style="color: indigo; font-size: 20px;" id="userTitle">title</span>
+                <hr>
+                <span style="color: #8a8a8a;" id="userDescription">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Placeat eum nam
+                    quisquam sed totam aliquid numquam, autem iure debitis, odio tempore ab nemo ad tempora adipisci
+                    veniam ullam porro ipsam.</span>
+            </div>
+        </div>
+        <h3 style="text-align: center;">User Skills</h3>
+        <div class="skillsSection">
+            <p id="skillName"></p> <button  onclick="deleteSkill()" id="del">Delete</button>
+            <p id="skillExperience"></p> <button  onclick="deleteSkill()" id="del">Delete</button>
+            <p id="skillId"></p> <button  onclick="deleteSkill()" id="del">Delete</button>
+           
+            <p id="newSkill">New Skill</p>
+        </div>
+
+
+        <h3 style="text-align: center;">User Gallery</h3>
+        <div class="gallerySection">
+            <img id="gal1" src="" alt="">
+            <img id="gal2" src="" alt="">
+            <img id="gal3" src="" alt="">
+        </div>
+    </div>
+    <script src="Display.js"></script>
+</body>
+
+</html>
