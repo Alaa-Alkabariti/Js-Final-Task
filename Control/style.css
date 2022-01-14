@@ -9,6 +9,27 @@ body {
 }
 /*body styling ends here*/
 
+/* .fCenter {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+} */
+
+.flexColumnCenter {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flexRowCenter {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 /*Container styling starts here*/
 .container {
   width: 80%;
@@ -22,62 +43,86 @@ body {
   align-items: center;
 }
 
-.containerTitle h1 {
+.containerTitle {
   color: #340044;
   /* text-align: center; */
 }
 /*Container styling ends here*/
-
-form {
-  width: 80%;
-  margin: 0 auto;
+form,
+.gallery {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+form {
+  width: 80%;
+  margin: 0 auto;
+
   flex-wrap: wrap;
 }
+
 input {
-  width: 48%;
+  width: 40%;
   padding-left: 10px;
-  height: 40px;
+  height: 50px;
   border: 0.5px solid #eeeeee;
   min-width: 200px;
   margin: 2px;
 }
 
 .hr1 {
-    border-bottom: 1px solid red;
+  border-bottom: 1px solid red;
 }
 
-button{
-    width: 100px;
-    height: 40px;
-    border: .5px solid #eeeeee;
-    background-color: #340044;
-    color: white;
-    margin-top: 10px;
-    margin-bottom: 100px;
+button {
+  width: 140px;
+  height: 50px;
+  border: 0.1px solid #eeeeee;
+  background-color: #340044;
+  color: white;
+  /* margin-top: 10px;
+  margin-bottom: 100px; */
+  box-shadow: 5px 5px 5px #807b7b33;
+  cursor: pointer;
 }
 
+button:hover {
+  box-shadow: 5px 5px 5px #f8f8f833;
+  background-color: rgb(84, 8, 139);
+}
+
+.skillName,
+.skillExper {
+  width: 43%;
+}
 
 .gallery {
-    width: 80%;
-    height: auto;/* 
+  width: 100%;
+  height: auto; /* 
     background-color: red; */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  flex-wrap: wrap;
 }
 
-#id, #imageLink, #description {
-    width: 30%;
-    height: 5     0px;
-    border: .5px solid #eeeeee;
-    margin: 10px;
-    min-width: 300px;
+.gallery input {
+  width: 50%;
+}
+
+#id,
+#imageLink,
+#description,
+#galleryDescription,
+#galleryImg {
+  width: 45%;
+  height: 50px;
+  border: 0.5px solid #eeeeee;
+  /*   margin: 10px;
+ */
+  min-width: 300px;
 }
 
 .buttonsSection {
@@ -86,4 +131,98 @@ button{
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+#profileForm,
+#galleryForm {
+  margin-bottom: 100px;
+  border: 0.5px solid #eeeeee;
+  padding: 20px;
+  background-color: #f5f1f1;
+}
+
+.skillsMain {
+  width: 80%;
+  margin-bottom: 100px;
+  border: 0.5px solid #eeeeee;
+  padding: 20px;
+  background-color: #f5f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  height: auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  /* margin-bottom: 20px; */
+}
+
+.s1 , .s2 {
+  border: 0.3px solid #eeeeee;
+  background-color: #3400442d;
+  width: 30%;
+  box-shadow: 5px 5px 5px #eeeeee;
+  /*  border-radius: 30px; */
+  text-align: center;
+  min-width: 200px;
+  color: #3a3a3a;
+  font-weight: bold;
+}
+
+.deleteSkillBtn,
+.updateSkillBtn {
+  background-color: #969494;
+  width: 70px;
+  /* border-radius: 30px; */
+}
+
+.updateSkillBtn:hover {
+  background-color: #5c5c5c;
+  width: 70px;
+}
+
+.deleteSkillBtn {
+  background-color: rgb(156, 11, 11);
+}
+
+.deleteSkillBtn:hover {
+  background-color: rgb(240, 14, 14);
+}
+
+.viewSkills {
+  width: 80%;
+  border: 0.2px solid #eeeeee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid rgb(216, 213, 213);
+  margin-top: 40px;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+#galleryForm {
+  width: 80%;
+  height: auto;
+}
+
+
+/*File uploading strts here*/
+#display_image {
+  width: 300px;
+  height: 169px;
+  border: 1px solid black;
+  background-position: center;
+  background-size: cover;
 }
