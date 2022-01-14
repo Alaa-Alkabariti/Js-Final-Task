@@ -41,7 +41,7 @@ function getSkills() {
     .then((data) => {
       let userProfileSkills = data.map((skill) => {
         return `
-        <div style="min-width:200px; margin:10px; width:50%; background-color:#eeeeee; color:#ffffff border="10px solid #ff0000; box-shadow:3px 3px 3px #ff0000" class="skillItem">
+        <div style="min-width:200px; margin:10px; width:100%; background-color:#f3f3f3; border="10px solid #ff0000; box-shadow:3px 3px 3px #ff0000" class="skillItem">
                 <p id="skillName">Skill Name: ${skill.skill}</p>
                 <p id="skillExperience">Experience:${skill.Experience}</p>
             </div>`;
@@ -61,9 +61,7 @@ function getSkills() {
         el.style.justifyContent = "center";
         el.style.alignItems = "start";
         el.style.flexWrap = "wrap";
-        el.style.boxShadow = "3px 3px 3px 0px rgba(227,222,222,0.75)";
-        el.style.boxShadow = "3px 3px 3px 0px rgba(227,222,222,0.75)";
-        /* el.style.backgroundColor = "transparent"; */
+        el.style.backgroundColor = "transparent";
       });   
     });
 }
